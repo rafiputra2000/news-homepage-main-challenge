@@ -1,0 +1,314 @@
+/* SELECTOR */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(36, 100%, 99%);
+}
+
+/* CLASS SELECTOR */
+
+/* .layout-all {
+  padding: 100px;
+} */
+
+.nav {
+  grid-area: nav;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .nav-layout-flex a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: hsl(240, 100%, 5%);
+}
+
+.nav .nav-layout-flex a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.nav-layout-flex {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: hsl(36, 100%, 99%)
+}
+
+.nav-layout-flex a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background: hsl(36, 100%, 99%)
+}
+
+.nav-layout-flex a:hover {
+  background-color: lightcoral;
+}
+
+.hide {
+  display: none;
+}
+
+.images {
+  grid-area: image;
+  /* background-image: url("../assets/images/image-web-3-desktop.jpg"); */
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  grid-area: desc;
+}
+
+.right-side {
+  grid-area: right;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-container {
+  padding: 100px 200px;
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "image image image image right right"
+    "image image image image right right"
+    "desc desc desc desc right right"
+    "footer footer footer footer footer footer";
+  gap: 20px;
+}
+
+.grid-container .right-side {
+  background-color: hsl(240, 100%, 5%);
+  padding: 25px;
+}
+
+.right-side h1 {
+  color: hsl(35, 77%, 62%);
+  margin-bottom: 20px;
+}
+
+.title-right-1 h4,
+.title-right-2 h4,
+.title-right-3 h4 {
+  margin-bottom: 5px;
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+
+.title-right-1 p,
+.title-right-2 p,
+.title-right-3 p {
+  /* margin: 20px 0; */
+  color: hsl(233, 8%, 79%);
+  line-height: 1.5em;
+}
+
+.title-right-1 h4:hover,
+.title-right-2 h4:hover,
+.title-right-3 h4:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+
+.title-right-1 hr,
+.title-right-2 hr,
+.title-right-3 hr {
+  margin: 20px 0;
+  border: 0.5px solid hsl(236, 13%, 42%);
+}
+
+.description .flex-container-desc {
+  display: flex;
+}
+
+.flex-container-desc h1 {
+  /* font-size: large; */
+  font-size: 3.125em;
+}
+
+.desc-right p {
+  line-height: 1.5em;
+}
+
+.desc-right .btn {
+  box-shadow: inset 0px -3px 7px 0px hsl(240, 100%, 5%);
+  background: linear-gradient(
+    to bottom,
+    hsl(240, 100%, 5%) 5%,
+    hsl(240, 100%, 5%) 100%
+  );
+  background-color: hsl(240, 100%, 5%);
+  border: 1px solid hsl(240, 100%, 5%);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px hsl(240, 100%, 5%);
+  margin-top: 25px;
+}
+
+.desc-right .btn:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(240, 100%, 5%) 5%,
+    hsl(240, 100%, 5%) 100%
+  );
+  background-color: hsl(240, 100%, 5%);
+}
+
+.desc-right .btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.image-retro-pcs,
+.image-top-laptops,
+.image-gaming-growth {
+  display: flex;
+  align-items: center;
+}
+
+.image-retro-pcs img,
+.image-top-laptops img,
+.image-gaming-growth img {
+  width: 50%;
+  height: 140px;
+}
+/* /////// */
+
+.desc-image-retro-pcs,
+.desc-image-top-laptops,
+.desc-image-gaming-growth {
+  margin-left: 20px;
+}
+
+.desc-image-retro-pcs a,
+.desc-image-top-laptops a,
+.desc-image-gaming-growth a {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(240, 100%, 5%);
+}
+
+.desc-image-retro-pcs h1,
+.desc-image-top-laptops h1,
+.desc-image-gaming-growth h1 {
+  /* margin: 20px 0; */
+  color: hsl(233, 8%, 79%);
+  line-height: 1.5em;
+}
+
+.desc-image-retro-pcs p,
+.desc-image-top-laptops p,
+.desc-image-gaming-growth p {
+  /* margin: 20px 0; */
+  color: hsl(236, 13%, 42%);
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.desc-image-retro-pcs a:hover,
+.desc-image-top-laptops a:hover,
+.desc-image-gaming-growth a:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+
+@media screen and (min-width: 600px) {
+  .nav-layout-flex {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-layout-flex a {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  /* #content.blur {
+    backdrop-filter: blur(5px);
+  }
+  
+  #content.blur > *:not(.nav-layout-flex):not(.hamburger) {
+    filter: blur(5px);
+  } */
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+  }
+
+  .description .flex-container-desc {
+    flex-direction: column;
+  }
+
+  .desc-right .btn {
+    box-shadow: inset 0px -3px 7px 0px hsl(5, 85%, 63%);
+  background: linear-gradient(
+    to bottom,
+    hsl(5, 85%, 63%) 5%,
+    hsl(5, 85%, 63%)100%
+  );
+  background-color: hsl(5, 85%, 63%);
+  border: 1px solid hsl(5, 85%, 63%);
+  }
+
+  .flex-container-desc .desc-right {
+    margin-top: 20px;
+  }
+
+  .image-retro-pcs img,
+  .image-top-laptops img,
+  .image-gaming-growth img {
+    width: 110px;
+    height: 140px;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
