@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,11 +12,120 @@ body {
 
 /* CLASS SELECTOR */
 
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* nav .logo {
+  font-size: 30px;
+  font-weight: 700;
+} */
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav .navLinks button{
+  padding: 2px 20px;
+  border-radius: 10px;
+  color: blue;
+  font-size: 16px;
+  border-style: none;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+nav ul li:hover {
+  background-color: blueviolet;
+}
+
+nav .menubtn{
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
+}
+
+/* responsive navbar css */
+/* @media screen and (max-width: 600px) {
+  nav .menubtn{
+    display: flex;
+  }
+  
+  nav .navLinks {
+    display: none;
+  }
+
+  .sideNav {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+} */
+
+.sideNav{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  background-color: hsl(36, 100%, 99%);
+  overflow-x: hidden;
+  transition: 0.3 ease-in;
+  padding-top: 60px;
+  display: none;
+}
+
+.sideNav a {
+  padding: 10px 8px 8px 25px;
+  display: block;
+  color: hsl(240, 100%, 5%);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.sideNav a button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: blue;
+  font-size: 16px;
+  border-style: none;
+  font-weight: 700;
+}
+
+.sideNav .closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.sideNav .list-sidenav{
+  margin-top: 50px;
+}
 /* .layout-all {
   padding: 100px;
 } */
 
-.nav {
+/* .nav {
   grid-area: nav;
   margin-bottom: 20px;
   display: flex;
@@ -67,10 +177,7 @@ body {
 .nav-layout-flex a:hover {
   background-color: lightcoral;
 }
-
-.hide {
-  display: none;
-}
+ */
 
 .images {
   grid-area: image;
@@ -248,7 +355,11 @@ body {
   color: hsl(5, 85%, 63%);
 }
 
-@media screen and (min-width: 600px) {
+.hide{
+  display: none;
+}
+
+/* @media screen and (min-width: 600px) {
   .nav-layout-flex {
     display: block;
     position: static;
@@ -263,9 +374,21 @@ body {
   .hamburger {
     display: none;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
+
+  nav .menubtn{
+    display: flex;
+  }
+  
+  nav .navLinks {
+    display: none;
+  }
+
+  /* .sideNav {
+    display: block;
+  } */
   
   /* #content.blur {
     backdrop-filter: blur(5px);
@@ -311,4 +434,8 @@ body {
   .footer {
     flex-direction: column;
   }
+
+  /* .hide {
+    display: none;
+  } */
 }
