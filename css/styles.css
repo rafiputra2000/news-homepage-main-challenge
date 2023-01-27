@@ -18,11 +18,6 @@ nav {
   justify-content: space-between;
 }
 
-/* nav .logo {
-  font-size: 30px;
-  font-weight: 700;
-} */
-
 nav ul {
   display: flex;
   list-style: none;
@@ -41,47 +36,38 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav .navLinks button{
-  padding: 2px 20px;
+nav .navLinks button {
+  box-shadow: inset 0px -3px 7px 0px hsl(240, 100%, 5%);
+  background: linear-gradient(
+    to bottom,
+    hsl(240, 100%, 5%) 5%,
+    hsl(240, 100%, 5%) 100%
+  );
+  background-color: hsl(240, 100%, 5%);
+  border: 1px solid hsl(240, 100%, 5%);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px hsl(240, 100%, 5%);
   border-radius: 10px;
-  color: blue;
-  font-size: 16px;
-  border-style: none;
-  font-weight: 700;
-  margin-left: 10px;
 }
 
 nav ul li:hover {
   background-color: blueviolet;
 }
 
-nav .menubtn{
+nav .menubtn {
   font-size: 30px;
   font-weight: bolder;
   cursor: pointer;
   display: none;
 }
 
-/* responsive navbar css */
-/* @media screen and (max-width: 600px) {
-  nav .menubtn{
-    display: flex;
-  }
-  
-  nav .navLinks {
-    display: none;
-  }
-
-  .sideNav {
-    display: block;
-  }
-
-  .hide {
-    display: none;
-  }
-} */
-
-.sideNav{
+.sideNav {
   height: 100%;
   position: fixed;
   top: 0;
@@ -101,15 +87,6 @@ nav .menubtn{
   text-decoration: none;
 }
 
-.sideNav a button {
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: blue;
-  font-size: 16px;
-  border-style: none;
-  font-weight: 700;
-}
-
 .sideNav .closeBtn {
   position: absolute;
   top: 10px;
@@ -118,70 +95,12 @@ nav .menubtn{
   margin-left: 50px;
 }
 
-.sideNav .list-sidenav{
+.sideNav .list-sidenav {
   margin-top: 50px;
 }
-/* .layout-all {
-  padding: 100px;
-} */
-
-/* .nav {
-  grid-area: nav;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav .nav-layout-flex a {
-  text-decoration: none;
-  margin: 0 20px;
-  color: hsl(240, 100%, 5%);
-}
-
-.nav .nav-layout-flex a:hover {
-  color: hsl(5, 85%, 63%);
-}
-
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: black;
-}
-.hamburger:hover {
-  cursor: pointer;
-}
-
-.nav-layout-flex {
-  position: fixed;
-  width: 94%;
-  top: 5rem;
-  left: 18px;
-  background-color: hsl(36, 100%, 99%)
-}
-
-.nav-layout-flex a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  background: hsl(36, 100%, 99%)
-}
-
-.nav-layout-flex a:hover {
-  background-color: lightcoral;
-}
- */
 
 .images {
   grid-area: image;
-  /* background-image: url("../assets/images/image-web-3-desktop.jpg"); */
 }
 
 .images img {
@@ -260,7 +179,6 @@ nav .menubtn{
 }
 
 .flex-container-desc h1 {
-  /* font-size: large; */
   font-size: 3.125em;
 }
 
@@ -355,41 +273,15 @@ nav .menubtn{
   color: hsl(5, 85%, 63%);
 }
 
-.hide{
-  display: none;
-}
-
-/* @media screen and (min-width: 600px) {
-  .nav-layout-flex {
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .nav-layout-flex a {
-    display: inline-block;
-  }
-
-  .hamburger {
-    display: none;
-  }
-} */
-
 @media screen and (max-width: 600px) {
-
-  nav .menubtn{
+  nav .menubtn {
     display: flex;
   }
-  
+
   nav .navLinks {
     display: none;
   }
 
-  /* .sideNav {
-    display: block;
-  } */
-  
   /* #content.blur {
     backdrop-filter: blur(5px);
   }
@@ -397,6 +289,27 @@ nav .menubtn{
   #content.blur > *:not(.nav-layout-flex):not(.hamburger) {
     filter: blur(5px);
   } */
+
+  .sideNav a button {
+    box-shadow: inset 0px -3px 7px 0px hsl(5, 85%, 63%);
+    background: linear-gradient(
+      to bottom,
+      hsl(5, 85%, 63%) 5%,
+      hsl(5, 85%, 63%) 100%
+    );
+    background-color: hsl(5, 85%, 63%);
+    border: 1px solid hsl(5, 85%, 63%);
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px hsl(5, 85%, 63%);
+    margin-top: 25px;
+    border-radius: 20px;
+  }
 
   .grid-container {
     display: flex;
@@ -410,13 +323,14 @@ nav .menubtn{
 
   .desc-right .btn {
     box-shadow: inset 0px -3px 7px 0px hsl(5, 85%, 63%);
-  background: linear-gradient(
-    to bottom,
-    hsl(5, 85%, 63%) 5%,
-    hsl(5, 85%, 63%)100%
-  );
-  background-color: hsl(5, 85%, 63%);
-  border: 1px solid hsl(5, 85%, 63%);
+    background: linear-gradient(
+      to bottom,
+      hsl(5, 85%, 63%) 5%,
+      hsl(5, 85%, 63%) 100%
+    );
+    background-color: hsl(5, 85%, 63%);
+    border: 1px solid hsl(5, 85%, 63%);
+    text-shadow: 0px 1px 0px hsl(5, 85%, 63%);
   }
 
   .flex-container-desc .desc-right {
@@ -434,8 +348,4 @@ nav .menubtn{
   .footer {
     flex-direction: column;
   }
-
-  /* .hide {
-    display: none;
-  } */
 }
